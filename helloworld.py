@@ -16,3 +16,15 @@ for file in list:
     name, ext = file.split(".")
 print(name, ext)
 """
+
+#TIPOS DE ARCHIVOS
+
+TEXTO = ["txt", "doc", "docx", "pdf"]
+IMAGENES = ["jpg", "gif", "bmp", "png"]
+VIDEOS = ["avi", "mp4", "mpeg", "mwv"]
+EJECUCIONES_DE_SISTEMA = ["exe", "bat", "dll", "sys"]
+AUDIOS = ["mp3", "wav", "wma"]
+COMPRIMIDOS = ["zip", "rar", "tar"]
+IMAGENES_DE_DISCO = ["iso", "mds", "img"]
+
+##################
