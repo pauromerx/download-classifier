@@ -1,6 +1,18 @@
 import os
 import shutil
 
+#TIPOS DE ARCHIVOS
+
+TEXTO = ["txt", "doc", "docx", "pdf"]
+IMAGENES = ["jpg", "gif", "bmp", "png"]
+VIDEOS = ["avi", "mp4", "mpeg", "mwv"]
+EJECUCIONES_DE_SISTEMA = ["exe", "bat", "dll", "sys"]
+AUDIOS = ["mp3", "wav", "wma"]
+COMPRIMIDOS = ["zip", "rar", "tar"]
+IMAGENES_DE_DISCO = ["iso", "mds", "img"]
+
+##################
+
 # Localizamos la carpeta a organizar
 download_folder = "E:/adrim/Documents/Code/Carpeta a organizar"
 
@@ -19,7 +31,5 @@ for file in list:
     name, ext = file.split(".")
     name_list.append(name)
     ext_list.append(ext)
-    # print(f"Nombre del archivo: {name} y extension: {ext}")
-
 print("Nombres de los archivos: " + str(name_list))
 print("Extensiones de los archivos: " + str(ext_list))
