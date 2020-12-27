@@ -8,11 +8,18 @@ download_folder = "E:/adrim/Documents/Code/Carpeta a organizar"
 list = os.listdir(download_folder)
 print(list)
 
-# Para cada posición de la lista separamos nombre y extensión
-# PROBLEMA: Si hay un punto intermedio en el nombre?
-# PROBLEMA: Hay que poner name y ext como listas
-"""
+# Para cada posición de la lista separamos nombre y extensión y lo guardamos en unas variables que luego
+# las vamos pasando a dos listas.
+
+
+name_list = []
+ext_list = []
+
 for file in list:
     name, ext = file.split(".")
-print(name, ext)
-"""
+    name_list.append(name)
+    ext_list.append(ext)
+    # print(f"Nombre del archivo: {name} y extension: {ext}")
+
+print("Nombres de los archivos: " + str(name_list))
+print("Extensiones de los archivos: " + str(ext_list))
